@@ -13,6 +13,13 @@ const MyDialog = () => {
     }
     return (
         <><h1></h1>
+            {/* <ModalCustomize
+                isShow={isShow}
+                handleOpen={handleClick}
+                handleClose={handleClose}
+                valueModal="Thank you for using our service. We'll annouce you as soon as we complete this feature."
+                titleModal="Coming soon"
+            /> */}
             <Transition appear show={isShow} as={Fragment}>
                 <Dialog as="div" className="relative z-10 " onClose={() => { }}>
                     <Transition.Child
@@ -49,7 +56,7 @@ const MyDialog = () => {
                                     </Dialog.Title>
 
                                     <div className="mt-2">
-                                        <p className="text-sm text-gray-500 dark:text-white ">Thanks you for using our service . We'll annouce you as soon.</p>
+                                        <p className="text-sm text-gray-500 dark:text-white ">Thanks you for using our service </p>
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
